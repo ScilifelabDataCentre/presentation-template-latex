@@ -66,9 +66,10 @@
 \hypersetup{colorlinks,linkcolor=,urlcolor=scilifelabaqua75}
 
 % Show section name in beginning of each section
-% \AtBeginSection{\frame{\sectionpage}}
-% \AtBeginSubsection{\frame{\subsectionpage}}
-% \AtBeginSubsubsection{\frame{\subsubsectionpage}}
+% \AtBeginSection{\frame{\tableofcontents[currentsection,currentsubsection]}}
+% \AtBeginSubsection{\frame{\tableofcontents[currentsection,currentsubsection]}}
+% \AtBeginSubsubsection{\frame{\tableofcontents[currentsection,currentsubsection,currentsubsection]}}
+
 
 \usepackage{booktabs}
 
