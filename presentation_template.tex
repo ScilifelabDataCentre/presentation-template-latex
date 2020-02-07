@@ -38,8 +38,6 @@
 % to include frame numbers in lower right corner
 % \setbeamertemplate{footline}[frame number]
 
-
-\hypersetup{colorlinks,linkcolor=,urlcolor=links}
 \usepackage{graphicx}
 
 % colours 
@@ -62,6 +60,11 @@
 \definecolor{scilifelabgrape75}{HTML}{77577E}
 
 \hypersetup{colorlinks,linkcolor=,urlcolor=scilifelabaqua75}
+
+% Show section name in beginning of each section
+% \AtBeginSection{\frame{\sectionpage}}
+% \AtBeginSubsection{\frame{\subsectionpage}}
+% \AtBeginSubsubsection{\frame{\subsubsectionpage}}
 
 \usepackage{booktabs}
 
@@ -124,6 +127,8 @@
  \AddToShipoutPictureFG{
   \AtPagemyUpperLeft{{\includegraphics[width=1.6cm,keepaspectratio]{img/data-centre-logo.pdf}}}
 }%
+
+\section{Part 1}
  
 \begin{frame}{Title}{Subtitle}
  \begin{itemize}
