@@ -18,9 +18,10 @@
 \usepackage{bookman}
 % \usepackage{times}
 
+% helpers to put logo in upper right corner
 \usepackage{eso-pic}
 \newcommand\AtPagemyUpperLeft[1]{\AtPageLowerLeft{%
-\put(\LenToUnit{0.9\paperwidth},\LenToUnit{0.93\paperheight}){#1}}}
+\put(\LenToUnit{0.85\paperwidth},\LenToUnit{0.91\paperheight}){#1}}}
 
 \mode<presentation>
 \usetheme{default}
@@ -78,7 +79,7 @@
 \setbeamerfont{author}{shape=\scshape}
 
 % images used for logo (and first page in this case)
-\pgfdeclareimage[height=1cm]{sll-logo}{img/data-centre-logo.png}
+\pgfdeclareimage[height=1cm]{sll-logo}{img/data-centre-logo.pdf}
 
 % template for custom titlepage in beamer
 \defbeamertemplate*{title page}{customized}[1][]
@@ -98,11 +99,11 @@
  \end{center}
  \vspace{80pt}
  \begin{columns}
- \column{0.65\textwidth}
+ \column{0.6\textwidth}
  \usebeamerfont{institute}\insertinstitute\par
  \usebeamerfont{date}\insertdate\par
  \usebeamercolor[fg]{titlegraphic}\inserttitlegraphic
- \column{0.35\textwidth}
+ \column{0.4\textwidth}
  \centering
  $\begin{array}{cc}
  \pgfuseimage{sll-logo}\\
@@ -121,7 +122,7 @@
  
  % put logo in upper right corner to ape the official template
  \AddToShipoutPictureFG{
-  \AtPagemyUpperLeft{{\includegraphics[width=1cm,keepaspectratio]{img/data-centre-logo.png}}}
+  \AtPagemyUpperLeft{{\includegraphics[width=1.6cm,keepaspectratio]{img/data-centre-logo.pdf}}}
 }%
  
 \begin{frame}{Title}{Subtitle}
@@ -170,9 +171,9 @@
 
 \begin{frame}{Title}
  \centering
- \includegraphics<1-2>[width=0.5\textwidth]{img/data-centre-logo.png}\\
+ \includegraphics<1-2>[width=0.5\textwidth]{img/data-centre-logo.pdf}\\
  \vspace{0.1\textheight}
- \includegraphics<2>[height=0.1\textheight]{img/data-centre-logo.png}
+ \includegraphics<2>[height=0.1\textheight]{img/data-centre-logo.pdf}
 \end{frame}
 
 \end{document}
