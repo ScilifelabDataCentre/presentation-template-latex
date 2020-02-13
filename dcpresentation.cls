@@ -100,7 +100,7 @@
  \vspace{80pt}
  \begin{columns}
  \column{0.6\textwidth}
- \usebeamerfont{institute}\insertinstitute\par
+% \usebeamerfont{institute}\insertinstitute\par
  \usebeamerfont{date}\insertdate\par
  \usebeamercolor[fg]{titlegraphic}\inserttitlegraphic
  \column{0.4\textwidth}
