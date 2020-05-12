@@ -112,4 +112,4 @@
  }
 
 % \alert color
-\setbeamercolor{alerted text}{fg=scilifelabgrape75}
+\setbeamercolor{alerted text}{fg=scilifelablime}
