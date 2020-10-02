@@ -24,8 +24,8 @@
 
 % helpers to put logo in upper right corner
 \usepackage{eso-pic}
-\newcommand\AtPagemyUpperLeft[1]{\AtPageLowerLeft{%
-\put(\LenToUnit{0.85\paperwidth},\LenToUnit{0.91\paperheight}){#1}}}
+\newcommand\AtPageUpperRight[1]{\AtPageLowerLeft{%
+\put(\LenToUnit{0.94\paperwidth},\LenToUnit{0.92\paperheight}){#1}}}
 
 \mode<presentation>
 \usetheme{default}
@@ -75,11 +75,11 @@
 
 % style of title etc
 \setbeamerfont{title}{shape=\bf, size=\LARGE}
-\setbeamerfont{institute}{size=\tiny}
+\setbeamerfont{institute}{size=\normalsize}
 \setbeamerfont{author}{shape=\scshape}
 
 % images used for logo (and first page in this case)
-\pgfdeclareimage[height=1cm]{sll-logo}{img/data-centre-logo.pdf}
+\pgfdeclareimage[height=0.8cm]{sll-logo}{img/scilifelab-logo.pdf}
 
 % template for custom titlepage in beamer
 \defbeamertemplate*{title page}{customized}[1][]
@@ -97,10 +97,10 @@
 
  {\normalfont \scriptsize \authorEmail}
  \end{center}
- \vspace{80pt}
+ \vspace{40pt}
  \begin{columns}
  \column{0.6\textwidth}
-% \usebeamerfont{institute}\insertinstitute\par
+ \usebeamerfont{institute}\insertinstitute\par
  \usebeamerfont{date}\insertdate\par
  \usebeamercolor[fg]{titlegraphic}\inserttitlegraphic
  \column{0.4\textwidth}
