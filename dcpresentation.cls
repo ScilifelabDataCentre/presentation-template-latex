@@ -22,6 +22,11 @@
 % \usepackage{bookman}
 \usepackage{times}
 
+% itemize symbols
+\setbeamertemplate{itemize item}[triangle]
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{itemize subsubitem}[square]
+
 % helpers to put logo in upper right corner
 \usepackage{eso-pic}
 \newcommand\AtPageUpperRight[1]{\AtPageLowerLeft{%
